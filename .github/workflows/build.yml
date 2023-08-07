@@ -13,7 +13,15 @@ jobs:
     steps:
      - name: Checkout Repository
        uses: actions/checkout@v3
-       
+
+     - name: Optimize PNGs
+       run: bash ./opti.sh
+
+     - name: Create Pull Request
+       uses: peter-evans/create-pull-request@v5.0.2
+       with:
+         title: Optimized Assets
+
      - name: Setup Java
        uses: actions/setup-java@v3
        with:

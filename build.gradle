@@ -11,7 +11,9 @@ buildscript {
         }
     }
     dependencies {
-        classpath "net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT"
+        classpath("com.anatawa12.forge:ForgeGradle:2.3-1.0.+") {
+            changing = true
+        }
     }
 }
 
@@ -76,7 +78,7 @@ repositories {
     //https://www.cursemaven.com/
     //for Immersive Petroleum, Posts and Technology
     maven {
-        url "https://www.cursemaven.com"
+        url "https://cursemaven.com"
     }
 
     //Curseforge maven, in case some other maven goes offline
@@ -86,7 +88,6 @@ repositories {
             url = "https://minecraft.curseforge.com/api/maven/"
         }
     }
-
 }
 
 // change default maven url of FG2 to the new one.
@@ -109,7 +110,9 @@ dependencies {
     compileOnly "albedo:albedo:0.1.3"
     //Maybe someday...
     //deobfCompile "albedo:albedo:1.12.2:1.1.0"
-    deobfCompile 'baubles:Baubles:1.12:1.5.2'
+
+    //deobfCompile 'baubles:Baubles:1.12:1.5.2'
+    deobfCompile 'curse.maven:baubles-227083:2518667'
 
     compileOnly "org.squiddev:cc-tweaked-1.12.2:1.89.2"
     compileOnly "opencomputers:OpenComputers:MC1.12.2:1.7.2.67"
