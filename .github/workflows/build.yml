@@ -7,6 +7,18 @@ on:
     branches: [ "master" ]
   workflow_dispatch: #Manual Trigger
 
+permissions:
+  actions: read
+  checks: write
+  contents: write
+  deployments: write
+  issues: write
+  packages: read
+  pull-requests: write
+  repository-projects: none
+  security-events: read
+  statuses: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
