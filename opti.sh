@@ -1,5 +1,9 @@
 #!/bin/sh
 
+chmod +x ./oxipng
+chmod +x ./ffprobe
+chmod +x ./ffmpeg
+
 processAudio () {
     echo "Processing $1";
     bitrate=$(./ffprobe -v 0 -select_streams a:0 -show_entries stream=bit_rate -of compact=p=0:nk=1 "$1");
