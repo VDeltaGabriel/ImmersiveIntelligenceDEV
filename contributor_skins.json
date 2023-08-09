@@ -17,6 +17,23 @@
     ]
   },
   {
+    "name": "archangel",
+    "uuid": [
+      "28ad95e0-0c2e-4468-a02b-67ba3820080b"
+    ],
+    "appliesTo": [
+      "machinegun",
+      "submachinegun",
+      "light_engineer_armor"
+    ],
+    "mods": [
+      "rarity=Masterwork",
+      "skin_mg_text",
+      "text_color=55099c",
+      "cape"
+    ]
+  },
+  {
     "name": "royal",
     "uuid": [
       "22153f9b-4950-4028-911a-7d39a2c80101"
