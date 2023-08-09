@@ -24,7 +24,7 @@
     "appliesTo": [
       "machinegun",
       "submachinegun",
-      "light_engineer_armor"
+      "engineer_light"
     ],
     "mods": [
       "rarity=Masterwork",
