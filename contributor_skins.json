@@ -24,12 +24,14 @@
     "appliesTo": [
       "machinegun",
       "submachinegun",
-      "engineer_light"
+      "engineer_light",
+      "rifle",
+      "assault_rifle"
     ],
     "mods": [
       "rarity=Masterwork",
       "skin_mg_text",
-      "text_color=55099c",
+      "text_color=5a0d75",
       "cape"
     ]
   },
